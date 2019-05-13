@@ -26,9 +26,21 @@ li {
 	display: inline;
 	padding: 30px;
 }
+p{
+	width: 100%;
+	margin: 20px;
+	float: left
+}
+
 
 #logo{
 	padding: 100px;
+}
+
+bodyb{
+	width: 100%;
+	margin: 20px;
+	float: left;
 }
 
 .center {
