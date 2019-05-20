@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <head>
-	<title>Welcome to Amidulce!</title>
-		<link rel="stylesheet" type="text/css" href="css/amidulcestylesheet.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-		</style>
+  <title>Welcome to Amidulce!</title>
+    <link rel="stylesheet" type="text/css" href="css/amidulcestylesheet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+    </style>
 
 </head>
-	<body>
-		<header>
-      		<p>
-      			<h1><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></h>
-     		</p>
-			
-    		<nav class="mainNav" id=responsiveNav> 
+  <body>
+    <header>
+          <p><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></p>
+      
+        <nav class="mainNav" id=responsiveNav> 
 
-        	<ul>
-          		<li><a href="cakecupcakes.html">Cake & Cupcakes</a></li>
-          		<li><a href="cookies.html">Cookies</a></li>
-          		<li><a href="pies.html">Pies</a></li>
-          		<li><a href="gallery.html">Gallery</a></li>
-          		<li><a href="aboutus.html">About Us</a></li>
-          		<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-        	</ul>
-      		</nav>
-		</header>
-		
-		<main>
+          <ul>
+              <li><a href="cakecupcakes.html">Cake & Cupcakes</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="pies.html">Pies</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+          </ul>
+          </nav>
+    </header>
+    
+    <main>
 			<div class="gallery">
     			<a target="_blank">
      			<img src="amidulce_images/image17.jpg" class="center" width="600" height="400">
@@ -84,7 +82,28 @@
 		<footer>
 			<p>&copy; Copyright 2018</p>
 		</footer>
+<script>
 
+    function myFunction() {
+        var x = document.getElementById("responsiveNav");
+      
+      if (x.className === "mainNav") {
+          x.className += " responsive";
+        } else {
+
+            x.className = "mainNav";
+        }
+
+      }
+
+      //1. hamburger icon appears and nav items disappear
+
+      //2. when hamburger icon is selected nav items appear
+
+      //3. navigation items change from display inline to display block
+
+      //4. whem hamburger icon is selected again,navigation items dissappear and hamburger icon appears
+</script>
 			
 		</body>
 </html>

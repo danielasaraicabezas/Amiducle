@@ -10,9 +10,7 @@
 </head>
   <body>
     <header>
-          <p>
-            <h1><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></h>
-        </p>
+          <p><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></p>
       
         <nav class="mainNav" id=responsiveNav> 
 
@@ -137,5 +135,27 @@
     <footer>
       <p>&copy; Copyright 2018</p>
     </footer>
+    <script>
+
+    function myFunction() {
+        var x = document.getElementById("responsiveNav");
+      
+      if (x.className === "mainNav") {
+          x.className += " responsive";
+        } else {
+
+            x.className = "mainNav";
+        }
+
+      }
+
+      //1. hamburger icon appears and nav items disappear
+
+      //2. when hamburger icon is selected nav items appear
+
+      //3. navigation items change from display inline to display block
+
+      //4. whem hamburger icon is selected again,navigation items dissappear and hamburger icon appears
+</script>
 </body>
 </html>

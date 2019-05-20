@@ -10,9 +10,7 @@
 </head>
   <body>
     <header>
-          <p>
-            <h1><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></h>
-        </p>
+          <p><a href="homepage.html"> <img  src="amidulce_images/logo.png" class="center"></a></p>
       
         <nav class="mainNav" id=responsiveNav> 
 
@@ -22,6 +20,7 @@
               <li><a href="pies.html">Pies</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="aboutus.html">How to Order</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
           </ul>
           </nav>
@@ -32,8 +31,6 @@
 <style>
 .slideshow-container {
   background-image: url(Amidulce_images/bg.jpg);
-  position: relative;
-  margin: auto;
 }
 </style>
 </head>
@@ -42,17 +39,22 @@
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="amidulce_images/16.jpg" style="width:90%">
+  <img src="amidulce_images/16.jpg" style="width:70%">
 </div>
 
 <div class="mySlides fade">
-  <img src="amidulce_images/6.jpg" style="width:90%">
+  <img src="amidulce_images/6.jpg" style="width:70%">
 </div>
 
 <div class="mySlides fade">
-  <img src="amidulce_images/15.jpg" style="width:90%">
+  <img src="amidulce_images/15.jpg" style="width:70%">
 </div>
-
+<div class="mySlides fade">
+  <img src="amidulce_images/13.jpg" style="width:70%">
+</div>
+<div class="mySlides fade">
+  <img src="amidulce_images/4.jpg" style="width:70%">
+</div>
 </div>
 <br>
 
@@ -60,7 +62,16 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
+
+  <footer>
+      <p class="footer">&copy; Copyright 2019 Instagram: Amidulce </p>
+      <p class="footer"> Message us on Instagram to Order</p>
+  </footer>
+
+  </main>
 
 <script>
 var slideIndex = 0;
@@ -80,7 +91,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
     function myFunction() {
         var x = document.getElementById("responsiveNav");
@@ -102,6 +113,7 @@ function showSlides() {
 
       //4. whem hamburger icon is selected again,navigation items dissappear and hamburger icon appears
 </script>
+
 
 
 </body>
